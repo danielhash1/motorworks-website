@@ -1,0 +1,99 @@
+body {
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 69px;
+    background-color: #282828;
+}
+  
+
+.logo a {
+    text-align: center;
+    line-height: 118.02%;
+    letter-spacing: 0.375em;
+    padding-left: 38px;
+
+    color: #fff;
+    font-style: normal;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    font-weight: 400;
+    font-size: 24px;
+}
+.logo a:hover,
+.logo a:focus {
+    color: gray;
+}
+
+  
+nav ul {
+    display: flex;
+    list-style: none;
+    padding-right: 37px;
+}
+  
+nav ul li {
+    margin-left: 20px;
+}
+  
+nav ul li:first-child {
+    margin-left: 0;
+}
+  
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    /* transition: background-color 0.3s ease; */
+    border-bottom: 2px solid transparent;
+
+    transform: translate(-50%, -50%) scale(0);
+    transition: border-bottom-color 1s ease-in-out;
+    transition-duration: 0.3s;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+
+
+}
+  
+nav ul li a:hover {
+    color: rgb(158, 158, 158);
+    border-bottom-color: #c9c9c9;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.hero-part {
+    background-image: url('/images/theme.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Petit Formal Script';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 120px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+}
