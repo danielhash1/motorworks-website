@@ -1,17 +1,19 @@
 body {
+    margin: 0;
+    padding: 0;
+    
     font-family: 'Inter';
     font-size: 16px;
     line-height: 1.5;
     color: #333;
     background-color: #fff;
-    margin: 0;
-    padding: 0;
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     height: 69px;
     background-color: #282828;
 }
@@ -55,11 +57,11 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
-    /* transition: background-color 0.3s ease; */
+    margin-right: 60px;
     border-bottom: 2px solid transparent;
 
     transform: translate(-50%, -50%) scale(0);
-    transition: border-bottom-color 1s ease-in-out;
+    transition:  1s ease-in-out;
     transition-duration: 0.3s;
     font-family: 'Play';
     font-style: normal;
@@ -69,31 +71,47 @@ nav ul li a {
     color: #FFFFFF;
 
 
-}
-  
+}  
 nav ul li a:hover {
-    color: rgb(158, 158, 158);
-    border-bottom-color: #c9c9c9;
-    transform: translate(-50%, -50%) scale(1);
+    color: #FFCF53;
+    border-bottom-color: #5f5f5f;
 }
 
+
 .hero-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background-image: url('/images/theme.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 h1 {
+    text-align: center;
+
     font-family: 'Petit Formal Script';
     font-style: normal;
     font-weight: 400;
     font-size: 96px;
     line-height: 120px;
-    text-align: center;
     letter-spacing: 0.005em;
     color: #FFFFFF;
+}
+
+.under-h1 p {
+    text-align: center;
+    display: block;
+
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.93);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.37) 39.31%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 23px;
 }
