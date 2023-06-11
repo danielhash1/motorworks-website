@@ -86,7 +86,8 @@ nav ul li a:hover {
 
 .hero {
 
-    background-image: url("../images/theme1.jpg"); /* Замените на ссылку на ваше изображение фона */
+    background-image: url("../images/theme1.jpg");
+    /* Замените на ссылку на ваше изображение фона */
     background-size: cover;
     height: 100vh;
     background-position: center;
@@ -106,7 +107,7 @@ nav ul li a:hover {
 
 .hero-content h1 {
     position: relative;
-    
+
     font-family: 'Petit Formal Script';
     font-style: normal;
     font-weight: 400;
@@ -140,7 +141,7 @@ nav ul li a:hover {
 
 .hero-content button {
     position: relative;
-    
+
     font-family: 'Play';
     font-style: normal;
     font-weight: 400;
@@ -157,7 +158,7 @@ nav ul li a:hover {
     border: 6px solid #ffb700;
     padding: 20px 60px;
     margin-top: 12vh;
-    
+
     transition-duration: 0.5s;
 }
 
@@ -169,8 +170,11 @@ nav ul li a:hover {
     color: #ffb700;
 }
 
+/* main start */
+
 .frame2 {
     background-image: linear-gradient(267.79deg, rgba(0, 0, 0, 0.288) 36.52%, rgba(0, 0, 0, 0.349) 128.63%), linear-gradient(267.79deg, rgb(42, 69, 118) 36.52%, rgb(103, 31, 31) 128.63%);
+    padding-bottom: 142px;
 }
 
 .frame2-title {
@@ -233,6 +237,118 @@ nav ul li a:hover {
     max-width: 1000px;
     margin-left: 50px;
     margin-right: 50px;
-
 }
 
+/* footer start */
+
+.bg-footer{
+    background-color: rgba(0, 0, 0, 0.781);
+    background-image: url("../images/footer.png");
+    padding-bottom: 96px;
+    background-repeat: no-repeat;
+}
+
+.info{
+    padding-top: 100px;
+}
+
+.info-bg{
+    width: 850px;
+    background-color: rgba(0, 0, 0, 0.425);
+    border-radius: 10%;
+    padding-bottom: 60px;
+}
+
+.info-title{
+    padding-top: 80px;
+    font-size: 48px;
+    font-weight: 400;
+    font-family: 'Petit Formal Script', cursive;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.info-contact{
+    padding-top: 80px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 58px;
+    font-family: 'Inconsolata', monospace;
+    color: #FFFFFF;
+    padding-left: 77px;
+}
+
+.info-button{
+    display: flex;
+    justify-content: center;
+}
+
+.info-button-area{
+position: relative;
+
+font-family: 'Play';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 46px;
+padding-top: 20px;
+
+align-items: center;
+text-align: center;
+letter-spacing: 0.005em;
+
+color: #FFFFFF;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.09);
+border: 6px solid #ffb700;
+padding: 20px 60px;
+margin-top: 4vh;
+
+transition-duration: 0.5s;
+}
+
+.info-button-area:hover,
+.info-button-area:focus {
+    cursor: pointer;
+    border: 6px solid #0ee681;
+    background-color: #0000008e;
+    color: #ffb700;
+}
+
+.end-logo{
+    background-color: #282828;
+    height: 70px;
+    font-weight: 400;
+    font-size: 26px;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-all{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.title-location{
+    padding-top: 80px;
+    font-size: 48px;
+    font-weight: 400;
+    font-family: 'Petit Formal Script', cursive;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.location{
+    margin-top: 109px;
+    text-align: center;
+    width: 700px;
+    background-color: rgba(0, 0, 0, 0.425);
+    border-radius: 10%;
+    padding-bottom: 60px;
+}
+.map{
+    border-radius: 5%;
+}
