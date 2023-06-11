@@ -126,8 +126,6 @@ nav ul li a:hover {
 }
 
 .hero-content h2 {
-    
-    
     font-family: 'Play', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -135,11 +133,40 @@ nav ul li a:hover {
     line-height: 38px;
     text-align: center;
     letter-spacing: 0.009em;
-
     color: rgba(255, 255, 255, 0.93);
-
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.37) 39.31%, rgba(0, 0, 0, 0) 100%);
     border-radius: 23px;
+}
+
+.hero-content button {
+    position: relative;
+    
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    padding-top: 20px;
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.005em;
+
+    color: #FFFFFF;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.09);
+    border: 6px solid #ffb700;
+    padding: 20px 60px;
+    margin-top: 12vh;
+    
+    transition-duration: 0.5s;
+}
+
+.hero-content button:hover,
+.hero-content button:focus {
+    cursor: pointer;
+    border: 6px solid #0ee681;
+    background-color: #0000008e;
+    color: #ffb700;
 }
 
 .frame2 {
@@ -209,33 +236,3 @@ nav ul li a:hover {
 
 }
 
-.hero-content button {
-    position: relative;
-    
-    font-family: 'Play';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 46px;
-    padding-top: 20px;
-
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.005em;
-
-    color: #FFFFFF;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.09);
-    border: 6px solid #ffb700;
-    padding: 20px 60px;
-    margin-top: 12vh;
-    
-    transition-duration: 0.5s;
-}
-
-.hero-content button:hover,
-.hero-content button:focus {
-    cursor: pointer;
-    border: 6px solid #0ee681;
-    background-color: #0000008e;
-    color: #ffb700;
-}
