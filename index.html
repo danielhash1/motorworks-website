@@ -8,8 +8,9 @@
     <title>C.a.r.r. 9 Conceptz</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/responsive.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!-- fonts -->
 
@@ -31,23 +32,54 @@
 
 <body>
 
-    <header>
-        <div class="logo">
-            <a href="#">logo</a>
-        </div>
+    <!-- header -->
+    <div class="navbar visible">
+        <header id="main-header" class="header-hidden">
+            
+            <div class="logo">
+                <a href="#">logo</a>
+            </div>
 
-        <nav>
-            <ul>
-                <li><a href="#">main</a></li>
-                <li><a href="#">about us</a></li>
-                <li><a href="tel:+(412) 555-0163">+(412) 555-0163</a></li>
-            </ul>
-        </nav>
-    </header>
-        <section class="hero">
-            <div class="hero-content">
-                <div class="overlay"></div>
+            <nav>
+                <ul>
+                    <li><a href="#about-section">about us</a></li>
+                    <li><a href="#footer-section">find us</a></li>
+                    <li><a href="tel:+(412) 555-0163">+(412) 555-0163</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+        <!-- Main -->
+        <section id="main-section" class="hero">
+
+            <div class="hero_content">
+
+                <!--modal window -->
+                <div id="modal_id" class="modal">
+                    <div class="modal_content">
+                        <span class="closeModal">&times;</span>
+
+                        <h3>Please, leave your contact information:</h3>
+                        
+                        <form id="feedbackForm">
+                            <label for="name">Your name:</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Your E-mail:</label>
+                            <input type="text" id="email" name="email" required>
+
+                            <label for="phone">Phone number:</label>
+                            <input type="text" id="phone" name="phone" required>
+
+                            <label for="notes">Notes:</label>
+                            <input type="text" id="notes" name="notes">
+
+                            <button type="submit">Send form</button>
+                        </form>
+                    </div>
+                </div>
                 
+                <!-- hero -->
                 <h1>C.a.r.r. 9 Conceptz</h1>
 
                 <h2>Get a flawless paint job on your car, or<br>
@@ -55,84 +87,139 @@
                     shop. Contact us today to make an<br>
                     appointment!</h2>
                     
-                <button>Contact us</button>
+                <button class="contact_button" id="openModalBtn">Contact us</button>
             </div>
         </section>
 
-    <div class="frame2">
+        <!-- about us  -->
+        <section id="about-section">
+            <div class="frame2">
 
-        <div class="frame2-title">
-            About us:
+                <div class="frame2-title">
+                    About us:
+                </div>
+
+                <div class="main">
+
+                    <div class="all-main">
+                        <div class="icon">
+                            <img src="images/icon-paint.png" alt="">
+                        </div>
+                        <div class="title-main">
+                            Paint work
+                    </div>
+
+                    <div class="desk-main">
+                            Involves the application<br> of specialized coatings to<br> vehicles, such as primer,<br> basecoat,
+                            and clearcoat,<br> to restore their<br> appearance and protect<br> them from damage.
+                        </div>
+                    </div>
+
+                    <div class="all-main-2">
+                        <div class="icon">
+                            <img src="images/icon-body.png" alt="">
+                        </div>
+                        <div class="title-main">
+                            Body work
+                        </div>
+
+                        <div class="desk-main">
+                            Our auto workshop offers top-<br>quality repairing or<br> replacing damaged or broken<br> vehicle
+                            parts, such as<br>
+                            panels, bumpers, or doors. We<br> carefully repair, sand, and<br> paint the affected areas.
+                        </div>
+
+                    </div>
+
+                    <div class="all-main-3">
+                            <div class="icon">
+                                <img src="images/icon-custom.png" alt="">
+                            </div>
+                            <div class="title-main">
+                                Custom fabrication
+                            </div>
+
+                            <div class="desk-main">
+                                Get the ultimate personalized<br> ride with our custom<br> fabrication services at. We<br> use
+                                top-quality
+                                materials and<br> expert techniques to create<br> unique features for your<br> vehicle.
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main">
+
+                        <div class="all-main-4">
+                            <div class="icon">
+                                <img src="images/icon-respons.png" alt="">
+                            </div>
+                            <div class="title-main">
+                                Responsibility
+                            </div>
+
+                            <div class="desk-main">
+                                Responsibility is paramount at our auto workshop, where we<br> prioritize safety, quality, and clear
+                                communication to<br> ensure the best possible experience for our customers. Trust<br> us to handle
+                                your
+                                vehicle with the utmost care and<br> professionalism.
+                            </div>
+
+                    </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        
+    <footer id="footer-section" class="bg-footer">
+
+        <div class="footer-all">
+
+            <div class="info">
+                <div class="info-bg">
+    
+                    <div class="info-title">
+                        How you can find us:
+                    </div>
+        
+                    <div class="info-contact">
+                        Number: <a href="tel:+(412) 555-0163">+(412) 555-0163</a><br>
+                        Address: <a href="https://goo.gl/maps/XKGAXazowiXpHWjc8">4546 Peralta Blvd, Fremont, CA, USA</a><br>
+                    </div>
+    
+                    <div class="info-button">
+                        <button class="info-button-area" id="openModalBtn2">Contact now</button>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="location">
+                <div class="title-location">
+                    Our location:
+                </div>
+                <div class="map-location">
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d790.7937849732156!2d-122.01141843031922!3d37.55093726149642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbf75c5e5b581%3A0xc0d4b0bda8a4a471!2s4546%20Peralta%20Blvd%2C%20Fremont%2C%20CA%2094536%2C%20USA!5e0!3m2!1sen!2spl!4v1686604447131!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
         </div>
 
-        <div class="main">
 
-            <div class="all-main">
-                <div class="icon">
-                    <img src="images/icon-paint.png" alt="">
-                </div>
-                <div class="title-main">
-                    Paint work
-                </div>
+    </footer>
 
-                <div class="desk-main">
-                    Involves the application<br> of specialized coatings to<br> vehicles, such as primer,<br> basecoat,
-                    and clearcoat,<br> to restore their<br> appearance and protect<br> them from damage.
-                </div>
-            </div>
-
-            <div class="all-main-2">
-                <div class="icon">
-                    <img src="images/icon-body.png" alt="">
-                </div>
-                <div class="title-main">
-                    Body work
-                </div>
-
-                <div class="desk-main">
-                    Our auto workshop offers top-<br>quality repairing or<br> replacing damaged or broken<br> vehicle
-                    parts, such as<br>
-                    panels, bumpers, or doors. We<br> carefully repair, sand, and<br> paint the affected areas.
-                </div>
-
-            </div>
-
-            <div class="all-main-3">
-                <div class="icon">
-                    <img src="images/icon-custom.png" alt="">
-                </div>
-                <div class="title-main">
-                    Custom fabrication
-                </div>
-
-                <div class="desk-main">
-                    Get the ultimate personalized<br> ride with our custom<br> fabrication services at. We<br> use
-                    top-quality
-                    materials and<br> expert techniques to create<br> unique features for your<br> vehicle.
-
-                </div>
-
-            </div>
+    <div class="end-logo">
+        <div class="logo-text">
+            C.a.r.r. 9 Conceptz
         </div>
+    </div>
 
-        <div class="main">
 
-            <div class="all-main-4">
-                <div class="icon">
-                    <img src="images/icon-respons.png" alt="">
-                </div>
-                <div class="title-main">
-                    Responsibility
-                </div>
+        <script src="js/main.js"></script>
 
-                <div class="desk-main">
-                    Responsibility is paramount at our auto workshop, where we<br> prioritize safety, quality, and clear
-                    communication to<br> ensure the best possible experience for our customers. Trust<br> us to handle
-                    your
-                    vehicle with the utmost care and<br> professionalism.
-                </div>
+        <button id="scrollToTopBtn" title="Scroll to Top">
+            <i class="fas fa-arrow-up"></i>
+          </button>
 
-            </div>
-        </div>
     </body>
 </html>
