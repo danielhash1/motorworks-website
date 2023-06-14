@@ -1,3 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    /* Дополнительные свойства, если необходимо */
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -16,8 +31,9 @@ header {
 
     height: 69px;
     background-color: #282828;
-    z-index: 1;
+    z-index: 2;
 }
+
 
 .logo a {
     text-align: center;
@@ -38,7 +54,6 @@ header {
 .logo a:focus {
     color: gray;
 }
-
 
 nav ul {
     display: flex;
@@ -65,24 +80,155 @@ nav ul li a {
     transform: translate(-50%, -50%) scale(0);
     transition: 1s ease-in-out;
     transition-duration: 0.3s;
-    font-family: 'Play';
+    font-family: 'Play', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
     color: #FFFFFF;
-
-
 }
 
 nav ul li a:hover {
     color: #ffb700;
     border-bottom-color: #5f5f5f;
+
+}
+
+/* modal window */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.363);
+    height: 100vh;
+
+    opacity: 0;
+}
+
+.modal_content {
+    position: relative;
+    background-color: #383838;
+    margin: 8% auto;
+    color: #ffffff;
+    padding: 30px;
+    border: 2px solid #e9c600;
+    width: 30em;
+    border-radius: 20px;
+}
+@media screen and (max-width: 1400px) {
+    .modal_content {
+        width: 25em;
+        margin: 4% auto;
+    }
+  }
+
+.modal_open {
+    opacity: 1;
 }
 
 
-/* hero */
 
+.closeModal {
+    color: #a1a1a1;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: normal;
+    cursor: pointer;
+
+    transition-duration: 0.3s;
+
+}
+.closeModal:hover,
+.closeModal:focus {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* form */
+
+.modal_content h3 {
+    font-family: 'Play', sans-serif;
+    font-size: 32px;
+}
+
+form {
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    margin-top: 10%;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input[type="text"],
+  textarea {
+    font-family: 'Play', sans-serif;;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  button[type="submit"] {
+    position: relative;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 46px;
+    padding-top: 20px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.09);
+    border: 3px solid #ffb700;
+    padding: 5px 20px;
+    margin-top: 12vh;
+    transition-duration: 0.5s;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5em;
+    border-radius: 0px;
+  }
+  
+  button[type="submit"]:hover {
+    color: #ffb700;
+    border-radius: 30px;
+    border: 3px solid #0ee681;
+    cursor: pointer;
+  }
+
+
+#notes {
+width: 70%;
+  height: 100px; /* Высота поля ввода */
+  padding: 20px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  text-align: left; /* Выравнивание текста слева */
+  vertical-align: text-top; /* Выравнивание текста по верху */
+}
+
+#feedbackForm label {
+    margin-top: 25px;
+}
+
+/* hero */
 
 .hero {
 
@@ -100,12 +246,12 @@ nav ul li a:hover {
     z-index: 1;
 }
 
-.hero-content {
+.hero_content {
     text-align: center;
     margin-bottom: 8vh;
 }
 
-.hero-content h1 {
+.hero_content h1 {
     position: relative;
 
     font-family: 'Petit Formal Script';
@@ -119,14 +265,14 @@ nav ul li a:hover {
     color: #FFFFFF;
 }
 
-.hero-content h2 {
+.hero_content h2 {
     position: relative;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.37) 39.31%, rgba(0, 0, 0, 0) 100%);
     border-radius: 23px;
     letter-spacing: 0.009em;
 }
 
-.hero-content h2 {
+.hero_content h2 {
     font-family: 'Play', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -139,7 +285,7 @@ nav ul li a:hover {
     border-radius: 23px;
 }
 
-.hero-content button {
+.contact_button {
     position: relative;
 
     font-family: 'Play';
@@ -154,7 +300,7 @@ nav ul li a:hover {
     letter-spacing: 0.005em;
 
     color: #FFFFFF;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.09);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.09);
     border: 6px solid #ffb700;
     padding: 20px 60px;
     margin-top: 12vh;
@@ -162,17 +308,19 @@ nav ul li a:hover {
     transition-duration: 0.5s;
 }
 
-.hero-content button:hover,
-.hero-content button:focus {
+.contact_button:hover,
+.contact_button:focus {
     cursor: pointer;
     border: 6px solid #0ee681;
     background-color: #0000008e;
     color: #ffb700;
+    border-radius: 40px;
 }
 
 /* main start */
 
 .frame2 {
+    padding-bottom: 80px;
     background-image: linear-gradient(267.79deg, rgba(0, 0, 0, 0.288) 36.52%, rgba(0, 0, 0, 0.349) 128.63%), linear-gradient(267.79deg, rgb(42, 69, 118) 36.52%, rgb(103, 31, 31) 128.63%);
     padding-bottom: 142px;
 }
@@ -237,118 +385,6 @@ nav ul li a:hover {
     max-width: 1000px;
     margin-left: 50px;
     margin-right: 50px;
+
 }
 
-/* footer start */
-
-.bg-footer{
-    background-color: rgba(0, 0, 0, 0.781);
-    background-image: url("../images/footer.png");
-    padding-bottom: 96px;
-    background-repeat: no-repeat;
-}
-
-.info{
-    padding-top: 100px;
-}
-
-.info-bg{
-    width: 850px;
-    background-color: rgba(0, 0, 0, 0.425);
-    border-radius: 10%;
-    padding-bottom: 60px;
-}
-
-.info-title{
-    padding-top: 80px;
-    font-size: 48px;
-    font-weight: 400;
-    font-family: 'Petit Formal Script', cursive;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.info-contact{
-    padding-top: 80px;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 58px;
-    font-family: 'Inconsolata', monospace;
-    color: #FFFFFF;
-    padding-left: 77px;
-}
-
-.info-button{
-    display: flex;
-    justify-content: center;
-}
-
-.info-button-area{
-position: relative;
-
-font-family: 'Play';
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 46px;
-padding-top: 20px;
-
-align-items: center;
-text-align: center;
-letter-spacing: 0.005em;
-
-color: #FFFFFF;
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.09);
-border: 6px solid #ffb700;
-padding: 20px 60px;
-margin-top: 4vh;
-
-transition-duration: 0.5s;
-}
-
-.info-button-area:hover,
-.info-button-area:focus {
-    cursor: pointer;
-    border: 6px solid #0ee681;
-    background-color: #0000008e;
-    color: #ffb700;
-}
-
-.end-logo{
-    background-color: #282828;
-    height: 70px;
-    font-weight: 400;
-    font-size: 26px;
-    font-family: 'Inter', sans-serif;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-all{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.title-location{
-    padding-top: 80px;
-    font-size: 48px;
-    font-weight: 400;
-    font-family: 'Petit Formal Script', cursive;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.location{
-    margin-top: 109px;
-    text-align: center;
-    width: 700px;
-    background-color: rgba(0, 0, 0, 0.425);
-    border-radius: 10%;
-    padding-bottom: 60px;
-}
-.map{
-    border-radius: 5%;
-}
