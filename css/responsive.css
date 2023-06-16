@@ -269,6 +269,43 @@
 
 }
 
+/*  360x760*/
+
+@media screen and (orientation: portrait) and (max-width: 361px){
+    .location{
+        max-width: 340px;
+        margin-top: 100px;
+    }
+    .map{
+        max-width: 300px;
+        max-height: 350px;
+    }
+    .info-bg{
+        max-width: 340px;
+    }
+    .info-contact{
+        font-size: 20px;
+        text-align: center;
+        padding-left: 0;
+    }
+    .info-button-area{
+        padding: 15px 15px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 888px){
+    .logo-main,
+    .logo-about,
+    .logo-number {
+        display: none;
+    }
+    header {
+        justify-content: center;
+        display: flex;
+    }
+}
+
 /*  */
 /*  */
 /*  */
