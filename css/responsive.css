@@ -1,0 +1,311 @@
+/* 2k good */
+
+/* 1980x1080 good */
+
+/*1680×1050 good - 1536×1024 */
+
+/* 1400×1050  */
+@media (max-width: 1452px) {
+
+    .location {
+        max-width: 600px;
+    }
+
+    .map {
+        max-width: 450px;
+    }
+
+    .info-bg {
+        max-width: 600px;
+    }
+
+}
+
+/* 1280×1024 */
+
+@media (max-width: 1280px) {
+    .desk-main {
+        font-size: 20px;
+    }
+
+    .title-main {
+        font-size: 35px;
+    }
+}
+
+/* 1200×600 */
+
+@media (max-width: 1200px) {
+    .desk-main {
+        font-size: 15px;
+    }
+
+    .title-main {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 1152px) {
+
+    .location {
+        max-width: 530px;
+        margin-top: 130px;
+    }
+
+    .map {
+        max-width: 420px;
+        max-height: 400px;
+    }
+
+    .info-bg {
+        max-width: 530px;
+    }
+
+    .title-location {
+        padding-top: 50px;
+        padding-bottom: 40px;
+        font-size: 40px;
+    }
+
+    .info-title {
+        font-size: 40px;
+    }
+
+    .info-contact {
+        padding-top: 40px;
+    }
+
+}
+
+/* 810x1080  */
+
+@media screen and (orientation: portrait) and (max-width: 811px) {
+
+    .logo-main,
+    .logo-about,
+    .logo-number {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+        display: flex;
+    }
+
+    .hero-content h1 {
+        font-size: 46px;
+    }
+
+    .hero-content h2 {
+        max-width: 700px;
+        font-size: 30px;
+        width: auto;
+        height: auto;
+        margin-right: 5px;
+        margin-left: 15px;
+    }
+
+    .hero-content button{
+        margin-top: 5vh;
+    }
+
+    .hero{
+        max-height: 100vh;
+    }
+
+    .desk-main{
+        display: none;
+    }
+
+    .title-main{
+        margin-top: 1.5vh;
+    }
+
+    .icon{
+        margin-top: 6vh;
+    }
+
+    .footer-all{
+        display: block;
+    }
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/* 428x926 */
+
+@media screen and (orientation: portrait) and (max-width: 428px) {
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content h2 {
+        max-width: 700px;
+        font-size: 25px;
+        width: auto;
+        height: auto;
+        margin-right: 15px;
+        margin-left: 15px;
+        padding: 5px;
+    }
+
+    .info-button-area{
+        padding: 20px 40px;
+    }
+
+    .main{
+        display: block;
+    }
+
+    .frame2-title{
+        font-size: 40px;
+    }
+
+    .info-title{
+        font-size: 35px;
+    }
+
+    .info-contact{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .info-bg{
+        max-width: 400px
+    }
+
+    .location{
+        max-width: 400px;
+        margin-top: 50px;
+    }
+
+    .map{
+        max-width: 350px;
+    }
+    
+    .icon-img{
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 926px) {
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero{
+        height: 190vh;
+    }
+
+    .hero-content h2 {
+        max-width: 700px;
+        font-size: 25px;
+        width: auto;
+        height: auto;
+        margin-right: 15px;
+        margin-left: 15px;
+        padding: 5px;
+    }
+
+    .info-button-area{
+        padding: 15px 15px;
+        font-size: 25px;
+    }
+    
+    .hero-content button{
+        font-size: 25px;
+    }
+
+    .icon-img{
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .main{
+        display: flex;
+    }
+
+    .frame2-title{
+        font-size: 40px;
+    }
+
+    .info-title{
+        font-size: 30px;
+    }
+
+    .info-contact{
+        font-size: 25px;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .info-bg{
+        max-width: 400px
+    }
+
+    .location{
+        max-width: 400px;
+        margin-top: 100px;
+    }
+
+    .map{
+        max-width: 350px;
+        max-height: 350px;
+    }
+    
+    .title-location{
+        font-style: 30px;
+    }
+
+}
+
+/*  360x760*/
+
+@media screen and (orientation: portrait) and (max-width: 361px){
+    .location{
+        max-width: 340px;
+        margin-top: 100px;
+    }
+    .map{
+        max-width: 300px;
+        max-height: 350px;
+    }
+    .info-bg{
+        max-width: 340px;
+    }
+    .info-contact{
+        font-size: 20px;
+        text-align: center;
+        padding-left: 0;
+    }
+    .info-button-area{
+        padding: 15px 15px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 888px){
+    .logo-main,
+    .logo-about,
+    .logo-number {
+        display: none;
+    }
+    header {
+        justify-content: center;
+        display: flex;
+    }
+}
+
+/*  */
+/*  */
+/*  */

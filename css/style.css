@@ -87,7 +87,7 @@ nav ul li a:hover {
 .hero {
 
     background-image: url("../images/theme1.jpg");
-    /* Замените на ссылку на ваше изображение фона */
+
     background-size: cover;
     height: 100vh;
     background-position: center;
@@ -246,6 +246,8 @@ nav ul li a:hover {
     background-image: url("../images/footer.png");
     padding-bottom: 96px;
     background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
 }
 
 .info{
